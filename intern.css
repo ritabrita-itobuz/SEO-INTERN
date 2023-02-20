@@ -90,7 +90,7 @@
         color: white;
         transform: scaleY(1.08);
         /* transform-origin: bottom; */
-        transition: transform 0.50s ease-out;
+        transition: transform 1s ease-in-out;
     }
 
     .subscriptions:hover p {
