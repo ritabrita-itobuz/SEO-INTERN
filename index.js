@@ -19,6 +19,7 @@
 
     function secondChecking() {
         let name = document.getElementById('name').value.trim();
+<<<<<<< HEAD
         let mail = document.getElementById('mail').value.trim();
         
             if (name === null || name === '')
@@ -29,5 +30,11 @@
                 {
                     alert("Please provide your valid emailId");
                 }
+=======
+        let email = document.getElementById('mail').value.trim();
+        
+        if (name === null || name === '')
+            alert("name can't be blank");
+>>>>>>> ed5fd9c4a733fc7da9ff0b0c65c54e41fcf161cf
 
     }
