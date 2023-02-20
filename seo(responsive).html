@@ -32,53 +32,39 @@
 
 <body>
     
-    <!-- header -->
-    <!-- <section class="m-4 container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <a href="#" class="navbar-brand">nuvosa</a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse ms-5" id="navbarCollapse">
-                    <div class="navbar-nav">
-                        <a href="#" class="nav-item nav-link active">Home</a>
-                        <a href="#" class="nav-item nav-link">Projects</a>
-                        <a href="#" class="nav-item nav-link">Blog</a>
-                        <a href="#" class="nav-item nav-link">Pricing</a>
-                        <a href="#" class="nav-item nav-link">Contact</a>
-                        
-                    </div>
-                    <div class="navbar-nav ms-auto">
-                        <input type="text"
-                        class="btn btn-default btn-space navbar-btn navbar-right bg-transparent border border-dark"
-                        placeholder="Let's talk">
-                    <button type="submit" class="btn btn-default btn-space navbar-btn navbar-right">Search</button>
+                    <!-- <button type="submit" class="btn btn-default btn-space navbar-btn navbar-right">Search</button>
                         <button class="btn btn-default btn-space navbar-btn navbar-right">
                             <i class="fa-thin fa-magnifying-glass"></i>
+                        </button> -->
+    <section>
+        <header id="luxbar" class="luxbar-static">
+            <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
+            <div class="luxbar-menu luxbar-menu-right bg-white luxbar-menu-light">
+                <ul class="luxbar-navigation">
+                    <li class="luxbar-header">
+                        <a href="#" class="luxbar-brand">nuvos</a>
+                        <label class="luxbar-hamburger luxbar-hamburger-doublespin" 
+                        id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
+                    </li>
+                    <li class="luxbar-item luxbar-item-dark"><a href="#">Home</a></li>
+                    <li class="luxbar-item"><a href="#">Projects</a></li>
+                    <li class="luxbar-item"><a href="#">Blog</a></li>
+                    <li class="luxbar-item"><a href="#">Pricing</a></li>
+                    <li class="luxbar-item"><a href="#">Contact</a></li>
+                    <li class="luxbar-item"><a href="#">
+                        <input type="text"
+                            class="btn btn-default btn-space luxbar-btn luxbar-right bg-transparent border border-dark"
+                            placeholder="Let's talk">
+                    </a></li>
+                    <li class="luxbar-item"><a href="#">
+                        <button type="submit" class="btn btn-default btn-warning btn-space luxbar-btn luxbar-right">
+                            <i class="fa-thin fa-magnifying-glass"></i>
                         </button>
-                    </div>
-                </div>
+                    </a></li>
+                </ul>
             </div>
-        </nav>
-    </section> -->
-    <header id="luxbar" class="luxbar-fixed">
-        <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
-        <div class="luxbar-menu luxbar-menu-right bg-white luxbar-menu-light">
-            <ul class="luxbar-navigation">
-                <li class="luxbar-header">
-                    <a href="#" class="luxbar-brand">nuvos</a>
-                    <label class="luxbar-hamburger luxbar-hamburger-doublespin" 
-                    id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
-                </li>
-                <li class="luxbar-item luxbar-item-dark"><a href="#">Home</a></li>
-                <li class="luxbar-item"><a href="#">Projects</a></li>
-                <li class="luxbar-item"><a href="#">Blog</a></li>
-                <li class="luxbar-item"><a href="#">Pricing</a></li>
-                <li class="luxbar-item"><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </header>
+        </header>
+    </section>
 
     <!-- styles icons -->
     <section class="d-flex">
@@ -104,7 +90,7 @@
                     is simply. It is a long established fact that a reader will be distracted.
                 </div>
                 <div class="d-flex">
-                    <div class="card btn bg-warning m-4 ms-5 w-25 text-center">Get started</div>
+                    <div class="card btn bg-warning m-4 ms-5 w-25 text-center"><a href="#">Get started</a></div>
                 </div>
             </div>
             <div class="col-10 offset-1 col-sm-4 offset-sm-0">
@@ -125,8 +111,11 @@
                     It is a long established fact that a reader will be distracted by the readable content. It is a long
                     established fact that.
                 </div>
-                <div class="d-flex justify-content-end"><button class="btn"><i
-                            class="fa fa-arrow-alt-circle-right"></i></button></div>
+                <div class="d-flex justify-content-end"><a href="#">
+                    <button class="btn"><i
+                        class="fa fa-arrow-alt-circle-right"></i>
+                    </button>
+                </a></div>
             </div>
 
             <div class="col-10 offset-1 col-sm-4 offset-sm-0 rounded mt-4 box">
@@ -138,8 +127,11 @@
                     It is a long established fact that a reader will be distracted by the readable content. It is a long
                     established fact that.
                 </div>
-                <div class="d-flex justify-content-end"><button class="btn"><i
-                            class="fa fa-arrow-alt-circle-right"></i></button></div>
+                <div class="d-flex justify-content-end"><a href="#">
+                    <button class="btn"><i
+                        class="fa fa-arrow-alt-circle-right"></i>
+                    </button>
+                </a></div>
             </div>
 
             <div class="col-10 offset-1 col-sm-4 offset-sm-0 rounded mt-4 box">
@@ -151,8 +143,11 @@
                     It is a long established fact that a reader will be distracted by the readable content. It is a long
                     established fact that.
                 </div>
-                <div class="d-flex justify-content-end"><button class="btn"><i
-                            class="fa fa-arrow-alt-circle-right"></i></button></div>
+                <div class="d-flex justify-content-end"><a href="#">
+                    <button class="btn"><i
+                        class="fa fa-arrow-alt-circle-right"></i>
+                    </button>
+                </a></div>
             </div>
 
         </div>
@@ -235,7 +230,7 @@
                 <div class="fs-6 text-muted">It is a long established fact that a reader will be distracted by the It is
                     a long established .t is a long established fact that a reader will be distracted by the readable
                     content of .</div>
-                <div class="card btn bg-warning mt-4"> Learn more</div>
+                <div class="card btn bg-warning mt-4"><a href="#">Learn more</a></div>
             </div>
             <div class="col-10 offset-1 col-sm-4 offset-sm-0"><img src="./Images/mac.png" alt="" class="w-100 m-5"></div>
         </div>
@@ -254,7 +249,7 @@
             <div class="col-10 offset-1 col-sm-4 offset-sm-0 box">
                 <img src="./Outline/Status/Lightning-alt.svg" alt="" class=" pt-4">
                 <div class=" pt-3 fs-3">Grow Your Business</div>
-                <div class="text-muted fs-5  pt-3">It is a long established fact that a reader will be distracted
+                <div class="text-muted fs-5 pt-3">It is a long established fact that a reader will be distracted
                     by.</div>
                 <div class="text-primary ps-2 fs-5 pt-3 pb-4">Read More...</div>
             </div>
@@ -290,21 +285,21 @@
                 <div class="ps-3 pt-5 fs-3 text-center">See Optimazadion</div>
                 <div class="text-muted fs-6 ps-3 pt-3 text-center">It is a long established fact that a reader will be
                     distracted by. It is a long established. </div>
-                <div class="card btn bg-warning w-50 center-position mt-4"> Learn more</div>
+                <div class="card btn bg-warning w-50 center-position mt-4"><a href="#">Learn more</a></div>
             </div>
             <div class="col-10 offset-1 col-sm-3 offset-sm-0 box bg-white overflow-hidden">
                 <img src="./Images/research.png" alt="" class=" pt-4">
                 <div class="ps-3 pt-5 fs-3 text-center">Keyword Research</div>
                 <div class="text-muted fs-6 ps-3 pt-3 text-center">It is a long established fact that a reader will be
                     distracted by. It is a long established. </div>
-                <div class="card btn bg-warning w-50 center-position mt-4"> Learn more</div>
+                <div class="card btn bg-warning w-50 center-position mt-4"><a href="#">Learn more</a></div>
             </div>
             <div class="col-10 offset-1 col-sm-3 offset-sm-0 box bg-white overflow-hidden">
                 <img src="./Images/marketing.png" alt="" class=" pt-2">
                 <div class="ps-3 fs-3 text-center">Social Marketings</div>
                 <div class="text-muted fs-6 ps-3 pt-3 text-center">It is a long established fact that a reader will be
                     distracted by. It is a long established. </div>
-                <div class="card btn bg-warning w-50 center-position mt-4"> Learn more</div>
+                <div class="card btn bg-warning w-50 center-position mt-4"><a href="#">Learn more</a></div>
 
             </div>
         </div>
@@ -410,12 +405,12 @@
                     the readable content .It is a long established fact that a reader .It is a long.</div>
                 <div class="row d-flex justify-content-start">
                     <div class="col-10 offset-1 col-sm-3 offset-sm-0 mt-4">
-                        <input type="text" placeholder="Web URL" style="border-style: none; background-color: #8b8da3;">
+                        <input type="text" placeholder="Web URL" style="border-style: none; background-color: #8b8da3;" id="url">
                     </div>
                     <div class="col-10 offset-1 col-sm-3 offset-sm-0 mt-4">
-                        <input type="text" placeholder="Email Address" style="border-style: none; background-color: #8b8da3; border-left: 1px solid #262627;">
+                        <input type="text" placeholder="Email Address" style="border-style: none; background-color: #8b8da3; border-left: 1px solid #262627;" id="email">
                     </div>
-                    <div class="col-10 offset-1 col-sm-3 offset-sm-0 mt-4 p-1  card btn bg-warning ms-5">
+                    <div class="col-10 offset-1 col-sm-3 offset-sm-0 mt-4 p-1  card btn bg-warning ms-5" onclick="firstChecking()">
                         SUBMIT
                     </div>
 
@@ -434,10 +429,10 @@
 
         <div class="row d-flex m-2 p-5 justify-content-center gap-5">
             <div class="col-10 offset-2 col-sm-3 offset-sm-0 pt-5  subscriptions">
-                <div class="text-primary fs-4 pt-4 text-center">
+                <div class="fs-4 pt-4 text-primary text-center">
                     <sp>Plus</sp>
                 </div>
-                <div class="text-dark fs-3 pt-4 text-center">
+                <div class="fs-3 pt-4 text-dark text-center">
                     <p>46<span class="fs-6">/month</span></p>
                 </div>
                 <div class="fs-6 pt-4 text-center">
@@ -453,7 +448,7 @@
                     <p>Customer Management</p>
                 </div>
                 <div class="m-5 pt-5 pb-5">
-                    <div class="card btn ps-1 text-dark subscription-button">Get Started</div>
+                    <div class="card btn ps-1 text-dark subscription-button"><a href="#">Get Started</a></div>
                 </div>
             </div>
 
@@ -477,7 +472,7 @@
                     <p>Customer Management</p>
                 </div>
                 <div class="m-5 pt-5 pb-5">
-                    <div class="card btn ps-1 text-dark subscription-button">Get Started</div>
+                    <div class="card btn ps-1 text-dark subscription-button"><a href="#">Get Started</a></div>
                 </div>
             </div>
 
@@ -501,7 +496,7 @@
                     <p>Customer Management</p>
                 </div>
                 <div class="m-5 pt-5 pb-5">
-                    <div class="card btn ps-1 text-dark subscription-button">Get Started</div>
+                    <div class="card btn ps-1 text-dark subscription-button"><a href="#">Get Started</a></div>
                 </div>
             </div>
         </div>
@@ -678,7 +673,7 @@
             <div class="col-10 offset-1 col-sm-3 offset-sm-0 mt-4 box">
                 <input type="email" placeholder="EMAIL" style="border-style: none;" id="mail">
             </div>
-            <div class="col-10 offset-1 col-sm-3 offset-sm-0 mt-4 btn box" onclick="checking()">
+            <div class="col-10 offset-1 col-sm-3 offset-sm-0 mt-4 btn box" onclick="secondChecking()">
                 SUBMIT
             </div>
 
