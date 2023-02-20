@@ -14,6 +14,36 @@
         /* margin-right: 0rem; */
     }
 
+    .underline-hover {
+        position: relative;
+        /* color: #191ced; */
+        text-decoration: none;
+    }
+
+    .underline-hover::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0.125rem;
+        bottom: 0;
+        left: 0;
+        background-color: #193cec;
+        transform-origin: bottom left;
+        transition: transform 0.25s ease-out;
+    }
+
+    .underline-hover::after{
+        
+        transform: scaleX(0);
+    }
+
+    .underline-hover:hover::after {
+        transform: scaleX(1);
+    }
+    .hover-underline-animation:hover::after {
+        transform-origin: bottom right;
+    }
+    
     img {
         max-width: 100%;
     }
@@ -77,8 +107,8 @@
     }
 
     .swiper {
-        width: 100%;
-        height: 100%;
+        /* width: 100%;
+        height: 100%; */
       }
   
       .swiper-slide {
