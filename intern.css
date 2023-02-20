@@ -72,6 +72,10 @@
         border-radius: 25px;
     }
 
+    .subscriptions {
+        background-color: white;
+    }
+
     .subscriptions:hover {
         background-color: rgb(177, 114, 237);
         color: white;
@@ -86,8 +90,9 @@
         color :#6F77F1;
     }
 
-    .subscriptions:hover p{
+    .subscriptions:hover p {
         color: white;
+
     }
 
     .subscriptions:hover sp{
