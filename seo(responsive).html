@@ -18,16 +18,22 @@
         
 
     <link rel="stylesheet" href="intern.css">
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
+        
     <title>SEO Page for intern</title>
 
 </head>
 
 <body>
     
-    <section class="m-4">
+    <!-- header -->
+    <!-- <section class="m-4 container">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a href="#" class="navbar-brand">nuvosa</a>
@@ -44,37 +50,51 @@
                         
                     </div>
                     <div class="navbar-nav ms-auto">
-                        <!-- <a href="#" class="nav-item nav-link">Login</a> -->
                         <input type="text"
                         class="btn btn-default btn-space navbar-btn navbar-right bg-transparent border border-dark"
                         placeholder="Let's talk">
                     <button type="submit" class="btn btn-default btn-space navbar-btn navbar-right">Search</button>
-    
+                        <button class="btn btn-default btn-space navbar-btn navbar-right">
+                            <i class="fa-thin fa-magnifying-glass"></i>
+                        </button>
                     </div>
                 </div>
             </div>
         </nav>
-    </section>
+    </section> -->
+    <header id="luxbar" class="luxbar-fixed">
+        <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
+        <div class="luxbar-menu luxbar-menu-right bg-white luxbar-menu-light">
+            <ul class="luxbar-navigation">
+                <li class="luxbar-header">
+                    <a href="#" class="luxbar-brand">nuvos</a>
+                    <label class="luxbar-hamburger luxbar-hamburger-doublespin" 
+                    id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
+                </li>
+                <li class="luxbar-item luxbar-item-dark"><a href="#">Home</a></li>
+                <li class="luxbar-item"><a href="#">Projects</a></li>
+                <li class="luxbar-item"><a href="#">Blog</a></li>
+                <li class="luxbar-item"><a href="#">Pricing</a></li>
+                <li class="luxbar-item"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
 
+    <!-- styles icons -->
     <section class="d-flex">
-        <div class="col-1 m-5 ms-3"><img src="./Images/Rectangle 80.png"></div>
+        <div class="col-1 m-5 ms-1"><img src="./Images/Rectangle 80.png"></div>
         <div class="col-6 offset-4 mt-5"><img src="./Images/Ellipse 20.png"></div>
     </section>
 
     <!-- increase your web -->
     <section class="container">
-        <div class="row d-flex">
-            <div class="col-10 offset-1 col-sm-5 offset-sm-0 position-relative">
+        <div class="row d-flex ">
+            <div class="col-10 offset-1 col-sm-5 offset-sm-0" >
                 <!-- <div class=""> -->
-                <div class="ms-2 ps-3 d-flex position-absolute mt-5">
-                    <h1 class="text-dark ms-5 fs-3 fw-bolder">Increase your web traffic with our</h1>
-                    <div class="position-relative">
-                        <div class="position-absolute ps-3 m-4 fs-3 fw-bold textRotate" style="color:#6F77F1">expert
-                        </div>
-                        <img src="./Images/Rectangle 917.png" alt="">
-                    </div>
+                <div class="ms-2 ps-1 d-flex mt-5">
+                    <h1 class="text-dark ms-4 ps-2 fs-1 fw-bolder">Increase your web traffic with our</h1>
                 </div>
-                <img src="./Images/Ellipse 21.png" alt="" class=" ms-5 ps-3 ">
+                <!-- <img src="./Images/Ellipse 21.png" alt="" class=" ms-5 ps-3 "> -->
                 <!-- </div> -->
                 <div class="ms-5 mt-5 text-muted">
                     It is a long established fact that a reader will be distracted by the readable content of a page
@@ -87,16 +107,8 @@
                     <div class="card btn bg-warning m-4 ms-5 w-25 text-center">Get started</div>
                 </div>
             </div>
-            <div class="col-10 offset-1 col-sm-4 offset-sm-0 position-relative">
-                <img src="./Images/woman.png" alt="" class="w-75 position-absolute">
-                <img src="./Images/facebook.png" alt="" class=" ps-3">
-                <div class="d-flex">
-                    <!-- <img src="./Images/twitter.png" alt="" > -->
-                    <img src="./Images/Vector 16.png" alt="" class="w-100 h-100 pt-5">
-                </div>
-            </div>
-            <div class="col-1">
-                <img src="./Images/instagram.png" alt="" class="w-75 m-5 pt-2">
+            <div class="col-10 offset-1 col-sm-4 offset-sm-0">
+                <img src="./Images/woman.png" alt="" class="w-75" style="background-image: url('./Images/Vector\ 16.png'); background-size: 100%; background-repeat: no-repeat; background-position-y:center ;">
             </div>
         </div>
     </section>
@@ -106,8 +118,8 @@
         <div class=" row d-flex justify-content-around m-5">
             <div class="col-10 offset-1 col-sm-4 offset-sm-0 rounded mt-4 box">
                 <div class="d-flex">
-                    <img src="./Images/social media.png" alt="" class="ps-3 w-50">
-                    <div class="fs-3 ps-2 pt-3">Social Media<br>Management</div>
+                    <img src="./Images/social media.png" alt="" class="w-25">
+                    <div class="fs-5 ps-2 pt-3">Social Media<br>Management</div>
                 </div>
                 <div class="fs-6 ps-4 pt-3 text-muted">
                     It is a long established fact that a reader will be distracted by the readable content. It is a long
@@ -119,8 +131,8 @@
 
             <div class="col-10 offset-1 col-sm-4 offset-sm-0 rounded mt-4 box">
                 <div class="d-flex">
-                    <img src="./Images/email.png" alt="" class="ps-4 w-50">
-                    <div class="fs-3 ps-2 pt-3">Email<br>Marketing</div>
+                    <img src="./Images/email.png" alt="" class="ps-4 w-25">
+                    <div class="fs-5 ps-2 pt-3">Email<br>Marketing</div>
                 </div>
                 <div class="fs-6 ps-4 pt-3 text-muted">
                     It is a long established fact that a reader will be distracted by the readable content. It is a long
@@ -132,8 +144,8 @@
 
             <div class="col-10 offset-1 col-sm-4 offset-sm-0 rounded mt-4 box">
                 <div class="d-flex">
-                    <img src="./Images/seo .png" alt="" class="w-50">
-                    <div class="fs-3 ps-2 pt-3">SEO<br>Management</div>
+                    <img src="./Images/seo .svg" alt="" class="w-25">
+                    <div class="fs-5 pt-3">SEO<br>Management</div>
                 </div>
                 <div class="fs-6 ps-4 pt-3 text-muted">
                     It is a long established fact that a reader will be distracted by the readable content. It is a long
@@ -154,30 +166,28 @@
                 <div class="fs-6 ps-5 pt-3 text-muted">It is a long established fact that a reader will be
                     distracted by the readable content of a page when It is a long .</div>
             </div>
-
-
         </div>
         <div class="row d-flex mt-4">
-            <div class="col-10 offset-1 col-sm-3 offset-sm-0 d-flex flex-column align-items-center">
+            <div class="col-10 offset-1 col-sm-3 offset-sm-0 d-flex flex-column align-items-center bottom-hover">
                 <div class="d-flex">
                     <div class="position-relative">
                         <img src="./Images/keyWord.png" alt="" class="position-absolute">
                         <img src="./Images/pinkCircle.png" alt="" class="mt-2">
                     </div>
-                    <img src="./Images/1.png" alt="" class="ps-5 pt-5">
+                    <img src="./Images/1.png" alt="" class="ps-5 pt-3 w-50">
                 </div>
                 <div class="ps-5">Keyword Research</div>
                 <div class="ps-5 text-muted pt-2 pb-5">It is a long established fact that a reader will be distracted by
                     the It is a long established .</div>
             </div>
 
-            <div class="col-10 offset-1 col-sm-3 offset-sm-0 d-flex flex-column align-items-center">
+            <div class="col-10 offset-1 col-sm-3 offset-sm-0 d-flex flex-column align-items-center bottom-hover">
                 <div class="d-flex">
                     <div class="position-relative">
                         <img src="./Images/content optimisation.png" alt="" class="position-absolute">
                         <img src="./Images/greenCircle.png" alt="" class="mt-2">
                     </div>
-                    <img src="./Images/2.png" alt="" class="ps-5 pt-5">
+                    <img src="./Images/2.png" alt="" class="ps-5 pt-5 w-50">
                 </div>
                 <div class="ps-5">content Optimisation</div>
                 <div class="ps-5 text-muted pt-2 pb-5">It is a long established fact that a reader will be distracted by
@@ -185,13 +195,13 @@
             </div>
             <!-- <div class="position-relative"> -->
             <!-- <div class="position-absolute d-flex row"> -->
-            <div class="col-10 offset-1 col-sm-3 offset-sm-0 d-flex flex-column align-items-center">
+            <div class="col-10 offset-1 col-sm-3 offset-sm-0 d-flex flex-column align-items-center bottom-hover">
                 <div class="d-flex">
                     <div class="position-relative">
                         <img src="./Images/target.png" alt="" class="position-absolute">
                         <img src="./Images/blueCircle.png" alt="" class="mt-2">
                     </div>
-                    <img src="./Images/3.png" alt="" class="ps-5 pt-5">
+                    <img src="./Images/3.png" alt="" class="ps-5 pt-5 w-50">
                 </div>
                 <div class="ps-5">Target Analysis</div>
                 <div class="ps-5 text-muted pt-2 pb-5">It is a long established fact that a reader will be
@@ -199,13 +209,13 @@
             </div>
 
             <div
-                class="ccol-10 offset-1 col-sm-3 offset-sm-0 d-flex flex-column align-items-centerbg-white border border-bottom">
+                class="col-10 offset-1 col-sm-3 offset-sm-0 d-flex flex-column align-items-centerbg-white bottom-hover">
                 <div class="d-flex">
                     <div class="position-relative">
                         <img src="./Images/thumbs.png" alt="" class="position-absolute ps-2">
                         <img src="./Images/purpleCircle.png" alt="" class="mt-2">
                     </div>
-                    <img src="./Images/4.png" alt="" class="ps-5 pt-5">
+                    <img src="./Images/4.png" alt="" class="ps-5 pt-4 w-50">
                 </div>
                 <div class="ps-5">Continious Testing</div>
                 <div class="ps-5 text-muted pt-2 pb-5">It is a long established fact that a reader will be
@@ -218,8 +228,8 @@
     </section>
 
     <!-- perfect solution MAC -->
-    <section class="bg-light">
-        <div class="row d-flex m-5 p-1 justify-content-around">
+    <section class="bg-light container">
+        <div class="row d-flex m-5 p-5 justify-content-around">
             <div class="col-10 offset-1 col-sm-4 offset-sm-0">
                 <div class="fs-2">Perfect Solution For Your <span style="color:#6F77F1">Business</span></div>
                 <div class="fs-6 text-muted">It is a long established fact that a reader will be distracted by the It is
@@ -227,7 +237,7 @@
                     content of .</div>
                 <div class="card btn bg-warning mt-4"> Learn more</div>
             </div>
-            <div class="col-10 offset-1 col-sm-4 offset-sm-0"><img src="./Images/mac.png" alt="" class="w-75 m-5"></div>
+            <div class="col-10 offset-1 col-sm-4 offset-sm-0"><img src="./Images/mac.png" alt="" class="w-100 m-5"></div>
         </div>
 
     </section>
@@ -267,34 +277,34 @@
     </section>
 
     <!-- Why you should choose us -->
-    <section class="bg-light container">
+    <section class="bg-light container p-4">
         <div class="row">
             <div class="text-center fs-1">Why You Should <span class="text-primary">Choose Us. </span></div>
-            <div class="col-5 offset-4 fs-6 text-muted">It is a long established fact that a reader will be distracted
+            <div class="col-4 offset-4 text-center fs-6 text-muted">It is a long established fact that a reader will be distracted
                 by the readable content .It is a long established fact that a reader .It is a long established fact that
                 a reader will be .</div>
         </div>
-        <div class=" row d-flex p-3 justify-content-center">
-            <div class="col-10 offset-1 col-sm-4 offset-sm-0 box bg-white overflow-hidden">
+        <div class=" row d-flex p-3 justify-content-center gap-3">
+            <div class="col-10 offset-1 col-sm-3 offset-sm-0 box bg-white overflow-hidden">
                 <img src="./Images/optimization.png" alt="" class=" pt-4">
                 <div class="ps-3 pt-5 fs-3 text-center">See Optimazadion</div>
                 <div class="text-muted fs-6 ps-3 pt-3 text-center">It is a long established fact that a reader will be
                     distracted by. It is a long established. </div>
-                <div class="card btn bg-warning w-50 centerPosition mt-4"> Learn more</div>
+                <div class="card btn bg-warning w-50 center-position mt-4"> Learn more</div>
             </div>
-            <div class="col-10 offset-1 col-sm-4 offset-sm-0 box bg-white overflow-hidden">
+            <div class="col-10 offset-1 col-sm-3 offset-sm-0 box bg-white overflow-hidden">
                 <img src="./Images/research.png" alt="" class=" pt-4">
                 <div class="ps-3 pt-5 fs-3 text-center">Keyword Research</div>
                 <div class="text-muted fs-6 ps-3 pt-3 text-center">It is a long established fact that a reader will be
                     distracted by. It is a long established. </div>
-                <div class="card btn bg-warning w-50 centerPosition mt-4"> Learn more</div>
+                <div class="card btn bg-warning w-50 center-position mt-4"> Learn more</div>
             </div>
-            <div class="col-10 offset-1 col-sm-4 offset-sm-0 box bg-white overflow-hidden">
+            <div class="col-10 offset-1 col-sm-3 offset-sm-0 box bg-white overflow-hidden">
                 <img src="./Images/marketing.png" alt="" class=" pt-2">
                 <div class="ps-3 fs-3 text-center">Social Marketings</div>
                 <div class="text-muted fs-6 ps-3 pt-3 text-center">It is a long established fact that a reader will be
                     distracted by. It is a long established. </div>
-                <div class="card btn bg-warning w-50 centerPosition mt-4"> Learn more</div>
+                <div class="card btn bg-warning w-50 center-position mt-4"> Learn more</div>
 
             </div>
         </div>
@@ -302,37 +312,37 @@
 
     <!-- you may ask what -->
     <section class="container">
-        <div class="d-flex row">
-            <div class="col-10 offset-1 col-sm-8 offset-sm-0">
+        <div class="d-flex row mt-5">
+            <div class="col-10 offset-1 col-sm-6 offset-sm-0">
                 <img src="./Images/Rectangle 80.png" alt="" class="ms-5">
-                <img src="./Images/image 34.png" class="m-5 w-100">
+                <img src="./Images/image 34.png" class=" w-100 center-position">
                 <!-- <img src="./Images/Ellipse 23.png" alt="" class="float-right"> -->
             </div>
             <div class="col-10 offset-1 col-sm-4 offset-sm-0">
-                <div class="fs-1 ps-4 pe-3">You make ask what SEO & why do you need it? </div>
+                <div class="fs-3 ps-4 pe-3">You make ask what SEO & Why Do You <span style="color:#6F77F1">Need It?</span> </div>
                 <div class="fs-6 ps-4 p-4 text-muted">It is a long established fact that a reader will be distracted by
                     the readable<br>content. It is a long established fact that a reader. It is a long.</div>
                 <div class="d-flex pt-3 box">
-                    <img src="./Images/emailSeo.png" alt="">
+                    <img src="./Images/emailSeo.png" alt="" class="w-25">
                     <div>
                         <div class="fs-5 ps-2">Social Media Marketing</div>
-                        <div class="ps-2 pt-2">It is a long established fact that a reader will be<br> distracted by
+                        <div class="ps-2 pt-2">It is a long established fact that a reader will be distracted by
                             the.</div>
                     </div>
                 </div>
                 <div class="d-flex pt-3 box">
-                    <img src="./Images/emailMarketing.png" alt="">
+                    <img src="./Images/emailMarketing.png" alt="" class="w-25">
                     <div>
                         <div class="fs-5 ps-2">Email Marketing</div>
-                        <div class="ps-2 pt-2">It is a long established fact that a reader will be<br> distracted by
+                        <div class="ps-2 pt-2">It is a long established fact that a reader will be distracted by
                             the.</div>
                     </div>
                 </div>
                 <div class="d-flex pt-3 box">
-                    <img src="./Images/emailOptimization.png" alt="" class="">
+                    <img src="./Images/emailOptimization.png" alt="" class="w-25">
                     <div>
                         <div class="fs-5 ps-2">SEO Optimization</div>
-                        <div class="ps-2 pt-2">It is a long established fact that a reader will be<br> distracted by
+                        <div class="ps-2 pt-2">It is a long established fact that a reader will be distracted by
                             the.</div>
                     </div>
                 </div>
@@ -342,47 +352,44 @@
     </section>
 
     <!-- years of experience -->
-    <section class="container">
-        <div class="row d-flex  p-3 col-8 offset-1 ">
-            <div class="col-10 offset-1 col-sm-3 offset-sm-0">
+    <section class="container mt-5">
+        <div class="row d-flex p-2 col-8 offset-1 center-position border">
+            <div class="col-10 offset-1 col-sm-1 offset-sm-0 center-position">
                 <div>
-                    <div class="fs-4 text-muted text-center">86</div>
-                    <div class="fs-6"> Happy Clients </div>
+                    <div class="fs-2 text-muted text-center fw-bolder">86</div>
+                    <div class="fs-6 text-muted"> Happy Clients </div>
                 </div>
-                <!-- <div><img src="./Images/tinyRed.png" alt="" class="ps-5 pt-3"></div> -->
             </div>
 
-            <div class="col-10 offset-1 col-sm-3 offset-sm-0">
-                <img src="./Images/tinyRed.png" alt="" class="ps-2 pt-3">
+            <div class="col-10 offset-1 col-sm-1 offset-sm-0 center-position">
+                <img src="./Images/tinyRed.png" alt="" class=" pt-5">
             </div>
-            <div class="col-10 offset-1 col-sm-3 offset-sm-0">
+            <div class="col-10 offset-1 col-sm-1 offset-sm-0 center-position">
                 <div class="">
-                    <div class="fs-4 text-muted text-center">118</div>
-                    <div class="fs-6"> Project Done </div>
+                    <div class="fs-2 text-muted text-center fw-bolder">118</div>
+                    <div class="fs-6 text-muted"> Project Done </div>
                 </div>
-                <!-- <div><img src="./Images/tinyGreen.png" alt="" class="ps-5 pt-3"></div> -->
             </div>
 
-            <div class="col-10 offset-1 col-sm-3 offset-sm-0">
-                <img src="./Images/tinyGreen.png" alt="" class="ps-2 pt-3">
+            <div class="col-10 offset-1 col-sm-1 offset-sm-0 center-position">
+                <img src="./Images/tinyGreen.png" alt="" class=" pt-5">
             </div>
 
-            <div class="col-10 offset-1 col-sm-3 offset-sm-0">
+            <div class="col-10 offset-1 col-sm-1 offset-sm-0 center-position">
                 <div class="">
-                    <div class="fs-4 text-muted text-center">6+</div>
-                    <div class="fs-6"> Years Of Experience </div>
+                    <div class="fs-2 text-muted text-center fw-bolder">6+</div>
+                    <div class="fs-6 text-muted"> Years Of Experience </div>
                 </div>
-                <!-- <div><img src="./Images/tinyYellow.png" alt="" class="ps-5 pt-3"></div> -->
             </div>
 
-            <div class="col-10 offset-1 col-sm-3 offset-sm-0">
-                <img src="./Images/tinyYellow.png" alt="" class="ps-2 pt-3">
+            <div class="col-10 offset-1 col-sm-1 offset-sm-0 center-position">
+                <img src="./Images/tinyYellow.png" alt="" class=" pt-5">
             </div>
 
-            <div class="col-10 offset-1 col-sm-3 offset-sm-0">
+            <div class="col-10 offset-1 col-sm-1 offset-sm-0 center-position">
                 <div class="">
-                    <div class="fs-4 text-muted text-center">14</div>
-                    <div class="fs-6"> National Awards </div>
+                    <div class="fs-2 text-muted text-center fw-bolder">14</div>
+                    <div class="fs-6 text-muted"> National Awards </div>
                 </div>
             </div>
         </div>
@@ -401,20 +408,20 @@
                 <div class="fs-2 ps-4 pt-5">Check Your Website <span class="text-primary">Speed</span></div>
                 <div class="fs-6 text-muted ps-3 pt-3">It is a long established fact that a reader will be distracted by
                     the readable content .It is a long established fact that a reader .It is a long.</div>
-                <div class="row d-flex justify-content-evenly">
+                <div class="row d-flex justify-content-start">
                     <div class="col-10 offset-1 col-sm-3 offset-sm-0 mt-4">
-                        <input type="text" placeholder="Web URL" style="border-style: none;">
+                        <input type="text" placeholder="Web URL" style="border-style: none; background-color: #8b8da3;">
                     </div>
                     <div class="col-10 offset-1 col-sm-3 offset-sm-0 mt-4">
-                        <input type="text" placeholder="Email Address" style="border-style: none;">
+                        <input type="text" placeholder="Email Address" style="border-style: none; background-color: #8b8da3; border-left: 1px solid #262627;">
                     </div>
-                    <div class="col-10 offset-1 col-sm-3 offset-sm-0 mt-4 card btn bg-warning ms-3 ">
+                    <div class="col-10 offset-1 col-sm-3 offset-sm-0 mt-4 p-1  card btn bg-warning ms-5">
                         SUBMIT
                     </div>
 
                 </div>
             </div>
-            <div class="col-10 offset-1 col-sm-6 offset-sm-0 w-25"><img src="./Images/webSpeed.png" alt=""></div>
+            <div class="col-10 offset-1 col-sm-6 offset-sm-0 w-50 center-position"><img src="./Images/webSpeed.png" alt=""></div>
         </div>
     </section>
 
@@ -425,8 +432,8 @@
             <div class="col-6 offset-3 fs-6 pt-2 text-muted text-center">Choose the right SEO for you</div>
         </div>
 
-        <div class="row d-flex m-2 p-5 justify-content-around bg-white">
-            <div class="col-10 offset-2 col-sm-4 offset-sm-0 pt-5 subscriptions">
+        <div class="row d-flex m-2 p-5 justify-content-center gap-5">
+            <div class="col-10 offset-2 col-sm-3 offset-sm-0 pt-5  subscriptions">
                 <div class="text-primary fs-4 pt-4 text-center">
                     <sp>Plus</sp>
                 </div>
@@ -446,11 +453,11 @@
                     <p>Customer Management</p>
                 </div>
                 <div class="m-5 pt-5 pb-5">
-                    <div class="card btn ps-1 text-dark subscriptionButton">Get Started</div>
+                    <div class="card btn ps-1 text-dark subscription-button">Get Started</div>
                 </div>
             </div>
 
-            <div class="col-10 offset-2 col-sm-4 offset-sm-0 pt-5 ps-4 subscriptions">
+            <div class="col-10 offset-2 col-sm-3 offset-sm-0 pt-5 ps-4 subscriptions">
                 <div class="text-primary fs-4 pt-4 text-center">
                     <sp>Beginner</sp>
                 </div>
@@ -470,11 +477,11 @@
                     <p>Customer Management</p>
                 </div>
                 <div class="m-5 pt-5 pb-5">
-                    <div class="card btn ps-1 text-dark subscriptionButton">Get Started</div>
+                    <div class="card btn ps-1 text-dark subscription-button">Get Started</div>
                 </div>
             </div>
 
-            <div class="col-10 offset-2 col-sm-4 offset-sm-0 pt-5 ps-4 subscriptions">
+            <div class="col-10 offset-2 col-sm-3 offset-sm-0 pt-5 ps-4 subscriptions">
                 <div class="text-primary fs-4 pt-4 text-center">
                     <sp>Advanced</sp>
                 </div>
@@ -494,7 +501,7 @@
                     <p>Customer Management</p>
                 </div>
                 <div class="m-5 pt-5 pb-5">
-                    <div class="card btn ps-1 text-dark subscriptionButton">Get Started</div>
+                    <div class="card btn ps-1 text-dark subscription-button">Get Started</div>
                 </div>
             </div>
         </div>
@@ -504,15 +511,14 @@
     <section class="bg-white container">
         <div class="row">
             <div class="text-center fs-1">Our Expert team <span class="text-primary">Members</span></div>
-            <div class="col-5 offset-4 fs-6 text-muted text-center">It is a long established fact that a reader will be
+            <div class="col-4 offset-4 fs-6 text-muted text-center">It is a long established fact that a reader will be
                 distracted by the readable content .It is a long established fact that a reader .It is a long
-                established
-                fact that a reader</div>
+                established fact that a reader</div>
         </div>
 
-        <div class=" row d-flex m-5 pt-5 justify-content-evenly">
-            <div class="col-10 offset-1 col-sm-3 offset-sm-0 mt-4 border box">
-                <img src="./Images/muriel.png" alt="" class="centerPosition pt-5">
+        <div class=" row d-flex m-3 pt-5 justify-content-evenly">
+            <div class="col-10 offset-1 col-sm-2 offset-sm-0 mt-3 border box">
+                <img src="./Images/muriel.png" alt="" class="center-position pt-5">
                 <div class="fs-5 pt-3 text-center">Muriel Whee</div>
                 <div class="fs-6 text-center text-muted">Marketing Manager</div>
                 <div class="d-flex pt-3 pb-4 justify-content-evenly">
@@ -534,8 +540,8 @@
                     <img src="./Images//Outline/Brands/facebookIcon.png" alt=""> -->
                 </div>
             </div>
-            <div class="col-10 offset-1 col-sm-3 offset-sm-0 mt-4 border box">
-                <img src="./Images/john.png" alt="" class=" centerPosition pt-5">
+            <div class="col-10 offset-1 col-sm-2 offset-sm-0 mt-3 border box">
+                <img src="./Images/john.png" alt="" class=" center-position pt-5">
                 <div class="fs-5 pt-3 text-center">John Doe</div>
                 <div class="fs-6 text-center text-muted">Marketing Manager</div>
                 <div class="d-flex pt-3 pb-4 justify-content-evenly">
@@ -553,8 +559,8 @@
                     </button>
                 </div>
             </div>
-            <div class="col-10 offset-1 col-sm-3 offset-sm-0 mt-4 border box">
-                <img src="./Images/clay.png" alt="" class="centerPosition pt-5">
+            <div class="col-10 offset-1 col-sm-2 offset-sm-0 mt-3 border box">
+                <img src="./Images/clay.png" alt="" class="center-position pt-5">
                 <div class="fs-5 pt-3 text-center">Clay Porter </div>
                 <div class="fs-6 text-center text-muted">Marketing Manager</div>
                 <div class="d-flex pt-3 pb-4 justify-content-evenly">
@@ -572,8 +578,8 @@
                     </button>
                 </div>
             </div>
-            <div class="col-10 offset-1 col-sm-3 offset-sm-0 mt-4 border box">
-                <img src="./Images/doug.png" alt="" class="centerPosition pt-5">
+            <div class="col-10 offset-1 col-sm-2 offset-sm-0 mt-3 border box">
+                <img src="./Images/doug.png" alt="" class="center-position pt-5">
                 <div class="fs-5 pt-3 text-center">Doug Norm</div>
                 <div class="fs-6 text-center text-muted">Marketing Manager</div>
                 <div class="d-flex pt-3 pb-4 justify-content-evenly">
@@ -595,10 +601,10 @@
     </section>
 
     <!-- Cilents -->
-    <section class="bg-white container">
+    <section class="bg-white container m-5">
         <div class="row">
-            <div class="text-center fs-1">Our Clients Say</div>
-        </div>
+            <div class="text-center fs-1 text-dark ms-5">Our Clients Say</div>
+        </div> 
 
         <div class=" row d-flex">
             <div class=" col-3 offset-3"><img src="./Images/Ellipse 26.png" alt=""></div>
@@ -606,47 +612,61 @@
                 distracted by the readable content .It is a</div>
         </div>
 
-        <div class=" row d-flex m-3">
-            <div class="col-11 offset-1 col-sm-3 offset-sm-0 ms-3 border box"
-                style="background-image: url(/Images/comma.png); background-repeat:no-repeat">
-                <div class="fs-6 text-muted ps-3 pt-4">It is a long established fact that a reader will be distracted by
-                    the readable content .It is a long established fact that a reader </div>
-                <img src="./Images/firstClay.png" alt="" class="centerPosition pt-3">
-                <div class="fs-6 text-dark text-center">Clay porter</div>
-                <div class="fs-6 text-muted text-center pb-4">Ship builder</div>
-            </div>
+        <div class="swiper mySwiper"> 
+            <div class=" d-flex swiper-wrapper pt-5 justify-content-evenly">
+              <div class=" swiper-slide box" style="background-image: url(/Images/comma.png); background-repeat:no-repeat">
+                    <div class="fs-6 text-muted ps-3 pt-4">It is a long established fact that a reader will be distracted by
+                        the readable content .It is a long established fact that a reader </div>
+                    <img src="./Images/firstClay.png" alt="" class="center-position pt-3">
+                    <div class="fs-6 text-dark text-center">Clay porter</div>
+                    <div class="fs-6 text-muted text-center pb-4">Ship builder</div>
+              </div>
 
-            <div class="col-11 offset-1 col-sm-3 offset-sm-0 ms-3 border box"
-                style="background-image: url(/Images/comma.png); background-repeat:no-repeat">
-                <div class="fs-6 text-muted ps-3 pt-4">It is a long established fact that a reader will be distracted by
-                    the readable content .It is a long established fact that a reader </div>
-                <img src="./Images/secondClay.png" alt="" class="centerPosition pt-3">
-                <div class="fs-6 text-dark text-center">Clay porter</div>
-                <div class="fs-6 text-muted text-center pb-4">Ship builder</div>
-            </div>
+              <div class=" swiper-slide box" style="background-image: url(/Images/comma.png); background-repeat:no-repeat">
+                    <div class="fs-6 text-muted ps-3 pt-4">It is a long established fact that a reader will be distracted by
+                        the readable content .It is a long established fact that a reader </div>
+                    <img src="./Images/secondClay.png" alt="" class="center-position pt-3">
+                    <div class="fs-6 text-dark text-center">Clay porter</div>
+                    <div class="fs-6 text-muted text-center pb-4">Ship builder</div>
+              </div>
 
-            <div class="col-11 offset-1 col-sm-3 offset-sm-0 ms-3 border box"
-                style="background-image: url(/Images/comma.png); background-repeat:no-repeat">
-                <div class="fs-6 text-muted ps-3 pt-4">It is a long established fact that a reader will be distracted by
-                    the readable content .It is a long established fact that a reader </div>
-                <img src="./Images/thirdclay.png" alt="" class="centerPosition pt-3">
-                <div class="fs-6 text-dark text-center">Clay porter</div>
-                <div class="fs-6 text-muted text-center pb-4">Ship builder</div>
-            </div>
+              <div class=" swiper-slide box" style="background-image: url(/Images/comma.png); background-repeat:no-repeat">
+                    <div class="fs-6 text-muted ps-3 pt-4">It is a long established fact that a reader will be distracted by
+                        the readable content .It is a long established fact that a reader </div>
+                    <img src="./Images/thirdClay.png" alt="" class="center-position pt-3">
+                    <div class="fs-6 text-dark text-center">Clay porter</div>
+                    <div class="fs-6 text-muted text-center pb-4">Ship builder</div>
+              </div>
 
-            <div class="col-11 offset-1 col-sm-3 offset-sm-0 ms-3 border box"
-                style="background-image: url(/Images/comma.png); background-repeat:no-repeat">
-                <div class="fs-6 text-muted ps-3 pt-4">It is a long established fact that a reader will be distracted by
-                    the readable content .It is a long established fact that a reader </div>
-                <img src="./Images/fourthClay.png" alt="" class="centerPosition pt-3">
-                <div class="fs-6 text-dark text-center">Clay porter</div>
-                <div class="fs-6 text-muted text-center pb-4">Ship builder</div>
+              <div class=" swiper-slide box" style="background-image: url(/Images/comma.png); background-repeat:no-repeat">
+                    <div class="fs-6 text-muted ps-3 pt-4">It is a long established fact that a reader will be distracted by
+                        the readable content .It is a long established fact that a reader </div>
+                    <img src="./Images/fourthClay.png" alt="" class="center-position pt-3">
+                    <div class="fs-6 text-dark text-center">Clay porter</div>
+                    <div class="fs-6 text-muted text-center pb-4">Ship builder</div>
+              </div>
             </div>
-        </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              slidesPerView: 3,
+              spaceBetween: 30,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+            });
+          </script>
     </section>
 
     <!-- Subscribe -->
-    <section class="container col-8 offset-1 border rounded centerPosition bg-light">
+    <section class="container col-8 offset-1 border rounded center-position bg-light">
         <div class="row">
             <div class="fs-2 text-dark pt-3 text-center">Subscribe & find the perfect Cosmetics</div>
             <div class="fs-6 text-muted text-center">Enter your email and get updated new products & news</div>
@@ -670,13 +690,13 @@
         <div class="row">
             <div class="fs-3 text-center">nuvosa</div>
         </div>
-        <div class=" col-12 d-flex justify-content-evenly m-3">
+        <div class="row d-flex justify-content-center ">
             <!-- <div class="col-10 offset-1 col-sm-4 offset-sm-0"> -->
-            <div>Overview</div>
-            <div>Pricing</div>
-            <div>Careers</div>
-            <div>Help</div>
-            <div>Privacy</div>
+            <div class="col-3 offset-1 col-sm-2 offset-sm-0">Overview</div>
+            <div class="col-3 offset-1 col-sm-2 offset-sm-0">Pricing</div>
+            <div class="col-3 offset-1 col-sm-2 offset-sm-0">Careers</div>
+            <div class="col-3 offset-1 col-sm-2 offset-sm-0">Help</div>
+            <div class="col-3 offset-1 col-sm-2 offset-sm-0">Privacy</div>
         </div>
         </div>
     </section>
