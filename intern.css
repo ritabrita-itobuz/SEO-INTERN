@@ -6,7 +6,7 @@
         overflow-x :hidden; 
         font-family: 'Poppins', sans-serif;
         font-family: 'Work Sans', sans-serif;
-        /* position: relative; */
+        position: relative;
         }
 
     .container {
@@ -29,7 +29,7 @@
         left: 0;
         background-color: #193cec;
         transform-origin: bottom left;
-        transition: transform 0.25s ease-out;
+        transition: transform 0.50s ease-out;
     }
 
     .underline-hover::after{
@@ -112,12 +112,9 @@
       }
   
       .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content:center;
+        align-items: end;
       }
   
       .swiper-slide {
@@ -126,8 +123,8 @@
       }
     @media only screen and (min-width: 786px) {
         body {
-            /* margin-left: 15px;
-            margin-right: 15px; */
+            margin-left: 15px;
+            margin-right: 15px;
         };
     }
 
