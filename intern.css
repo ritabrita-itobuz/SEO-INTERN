@@ -76,11 +76,6 @@
         background-color: white;
     }
 
-    .subscriptions:hover {
-        background-color: rgb(177, 114, 237);
-        color: white;
-    }
-
     p {
         color: black;
         text-decoration: none;
@@ -90,9 +85,17 @@
         color :#6F77F1;
     }
 
+    .subscriptions:hover {
+        background-color: rgb(177, 114, 237);
+        color: white;
+        transform: scaleY(1.08);
+        /* transform-origin: bottom; */
+        transition: transform 0.50s ease-out;
+    }
+
     .subscriptions:hover p {
         color: white;
-
+        transform: scaleY(1.03);
     }
 
     .subscriptions:hover sp{
