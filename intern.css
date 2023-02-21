@@ -2,6 +2,7 @@
     html {
         overflow-x :hidden;
     }
+    
     body{ 
         overflow-x :hidden; 
         font-family: 'Poppins', sans-serif;
@@ -81,7 +82,7 @@
         text-decoration: none;
     }
 
-    sp {
+    .subscription-type {
         color :#6F77F1;
     }
 
@@ -98,7 +99,7 @@
         transform: scaleY(1.03);
     }
 
-    .subscriptions:hover sp{
+    .subscriptions:hover .subscription-type {
         color: white;
     }
 
@@ -117,18 +118,19 @@
     .swiper {
         /* width: 100%;
         height: 100%; */
-      }
+    }
   
       .swiper-slide {
         display: flex;
         justify-content:center;
         align-items: end;
-      }
+    }
   
       .swiper-slide {
         display: block;
         object-fit: cover;
-      }
+    }
+
     @media only screen and (min-width: 320px) {
         body {
             margin-left: 15px;
